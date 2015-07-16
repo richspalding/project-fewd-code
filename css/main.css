@@ -1,0 +1,245 @@
+/* 
+Project Name: FEWD Project: RateEd
+Client: Me
+Author: Richard Spalding
+*/
+
+
+/******************************************
+/* COLOURS
+/*******************************************/
+
+/*
+https://color.adobe.com/Project-FEWD-Project-(2015-2H)-color-theme-6408742/
+LIGHT BLUE rgba(34,80,255,1.0)
+BLUE rgba(45,31,232,1.0)
+ROYAL PURPLE rgba(121,46,255,1.0)
+MEDIUM PURPLE rgba(184,98,232,1.0)
+MAUVE rgba(249,170,255,1.0)
+*/
+
+
+/******************************************
+/* SENSIBLE DEFAULTS                   
+/*******************************************/
+
+* {
+     box-sizing: border-box;
+}
+
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+/* HEADERS 
+font-family: 'Open Sans', sans-serif;
+*/
+/* BODY
+font-family: 'Gentium Basic', serif;
+*/
+
+h1 {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 3em;
+  color: rgba(121,46,255,1.0);
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 2em;
+  color: rgba(184,98,232,1.0);
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 1em;
+  color: rgba(45,31,232,1.0);
+}
+
+button {
+  font-family: 'Gentium Basic', serif;
+}
+
+/******************************************
+/* GRID
+/*******************************************/
+
+.grid-container { 
+  margin: 0 0; 
+  outline: 1px dashed blue; /* COMMENT OUT */
+}
+.grid-column {
+    float:left;
+    margin: 0;
+    padding: 0 20px; /* match to .grid-container, USEFUL for content */
+  outline: 1px solid red; /* COMMENT OUT */
+  min-height: 100px; /* COMMENT OUT */
+}
+.grid-sixth         { width:16.666%; }
+.grid-fifth         { width:20%; }
+.grid-quarter       { width:25%; }
+.grid-third         { width:33.333%; }
+.grid-half          { width:50%; }
+.grid-two-third     { width:66.667%; }
+.grid-whole         { width:100%; }
+
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+/* BREAKPOINTS
+Desktop: 1080px max
+Tablet: 830px
+Mobile: 500px
+*/
+
+.site-container {
+	max-width: 1080px; /* Using http://www.1080.gs/ */
+	margin: 0 auto;
+  background-color: lightblue;
+}
+
+.site-header {
+
+}
+
+.site-header h1 {
+  text-decoration: underline red;
+}
+
+.value-proposition {
+  position: relative;
+}
+
+
+.user-actions {
+  float: right;
+}
+
+
+.site-content {
+
+}
+
+.content-hero {
+    width: 100%;
+    text-align: center; 
+    overflow: hidden;
+}
+
+.image-hero {
+    position: relative;
+    left: 100%;
+    margin-left: -200%;
+}
+
+.content-value {
+  display: block;
+  text-align: center;
+}
+
+/* MEDIA QUERY FOR 'VALUE PROPOSITION': to flow into ;
+@media screen and (max-width: 830px) {
+  .content-value {
+    float: none;
+  }
+}
+*/
+
+.image-icon {
+  margin: 10px;
+}
+
+.site-footer {
+
+}
+
+
+/******************************************
+/* STYLING CLASSES
+/*******************************************/
+
+body {
+  background-color: powderblue;
+}
+
+.mod-value_prop {
+  outline: 5px dashed yellow;
+}
+
+.button-primary {
+  display:block;
+  padding:0.5em;
+  margin: 20px auto;
+  max-width: 200px;
+
+  color: rgba(255,255,255,1.0);
+  background: rgba(184,98,232,1.0);
+
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition:0.3s;
+}
+.button-primary:hover {
+  background: rgba(184,98,232,0.5);
+}
+
+.button-secondary {
+  /* display:block; */
+  padding:0.5em;
+  margin: 20px auto;
+  max-width: 200px;
+
+  color: rgba(255,255,255,1.0);
+  border: rgba(184,98,232,1.0) 1px solid;
+
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition:0.3s;
+}
+.button-secondary:hover {
+  background: rgba(184,98,232,0.5);
+}
+
+/******************************************
+/* HELPER CLASSES
+/*******************************************/
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+     content: " ";
+     display: table;
+}
+.clearfix:after {
+     clear:both;
+}
+
+.is-hidden {
+     display: none;
+}
+.is-visible {
+     display: block;
+}
+
+.overlay {
+    background-color: #EEEEEE;
+    position: absolute;
+    z-index:100;
+}
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+
+
+
